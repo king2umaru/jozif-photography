@@ -3,6 +3,7 @@ body{
     align-items: center;
     margin: 0px;
       text-decoration:none;
+      width: 1581px;
 }
 /****************************PARAGRAPH*********************/
 p{
@@ -72,7 +73,7 @@ padding-left: 60px;
 }
 .container-two{
     padding-top:20px;
-  width:100%;
+  width:1581px;
   height: 568.2px;
   background-color: F7F4EA;
 }
@@ -177,7 +178,9 @@ position: absolute;    left: 700px;;
 
 
 
-.IMAGES{    padding-left: unset;
+.IMAGES{
+width:1581px;
+   padding-left: unset;
     padding-right: unset;
     padding-top: 100px;
 }
