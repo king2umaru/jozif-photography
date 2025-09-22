@@ -10,9 +10,10 @@ p{
   line-height: 2;
 }
 /****************************HORIZONTALINE*********************/
-hr{
+hr{width: 500px;
   margin-left: 500px;
   margin-right: 500px;
+  padding-left: 50px;
 
 }
 /****************************IMAGES*********************/
@@ -61,7 +62,7 @@ padding-left: 60px;
 /****************************CONTAINERS*********************/
 .container-one{
 
-  width:100%;
+  width:1575px;
   height: 700px;
   background-color: #67C090;
   padding-top: 0px;
@@ -87,7 +88,7 @@ padding-left: 60px;
   position: absolute;left: 100px;
 }
 .heading-two{
-position: absolute;right: 1200px;
+position: absolute;left: 300px;
 }
 .heading-three{
 position: absolute;left: 500px;
@@ -139,7 +140,7 @@ left: 1200px;
 
 .btn {
   width: 150px;
-position: absolute;right: 700px;
+position: absolute;    left: 700px;;
   background: #b9aa96;
   background-image: -webkit-linear-gradient(top, #b9aa96, #b9aa96);
   background-image: -moz-linear-gradient(top, #b9aa96, #b9aa96);
