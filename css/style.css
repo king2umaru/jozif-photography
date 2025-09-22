@@ -27,9 +27,11 @@ position: static;
 .image-top{
   width: 200px;
   height: auto;
+    position: static;
 }
 
 .photo-one{
+  position: static;
   padding-left:40px;
   width: 420px;
   height: 500px;
@@ -38,6 +40,7 @@ position: static;
 .photo-two{  width: 420px;
   height: 500px;
 padding-left: 60px;
+  position: static;
 }
 .photo-three{  width: 420px;
   height: 500px;
