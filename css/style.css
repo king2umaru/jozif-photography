@@ -125,6 +125,7 @@ position: absolute;left: 1200px;}
 .Portrait{
 position: absolute;
 left: 250px;
+
 }
 .Fashion{
   position: absolute;bottom: auto;
@@ -168,6 +169,12 @@ position: absolute;    left: 700px;;
   background-image: -o-linear-gradient(top, #d4ac79, #9c7341);
   background-image: linear-gradient(to bottom, #d4ac79, #9c7341);
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+ .IMAGES img {
+   width: 100%;
+ }
 }
 
 
