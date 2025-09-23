@@ -4,6 +4,36 @@ body{
     margin: 0px;
       text-decoration:none;
       width: 1500px;
+
+
+  margin: 0;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+
+}
+
+/* hover************************************************/
+
+
+     a:link, a:visited {
+       color: inherit;            /* normal and visited links */
+       text-decoration: none;   /* no underline */
+     }
+
+     a:hover, a:active {
+       color: black;              /* change color on hover/click */
+       text-decoration: underline; /* optional: underline only when hover */
+     }
+
+
+
+ul{
+  list-style-type: none;
+
 }
 /****************************PARAGRAPH*********************/
 p{
@@ -81,7 +111,22 @@ padding-left: 60px;
   width: 200px;
   height: 200px;
 }
+.container-four{
+padding-left:100px;
+padding-top:200px;
+}
 
+.container-five{
+  position: absolute;left:500px;
+  top:2320px;
+padding-left:100px;
+padding-top: 95px;
+}
+.container-six{
+  height: 100px;
+  width: 500px;
+  padding-top: 500px;
+}
 /****************************headings*********************/
 .heading{
   padding-left: 700px;
@@ -153,8 +198,8 @@ left: 1130px;
 
 
 .btn {
-  width: 150px;
-position: absolute;    left: 640px;;
+  width: 246px;
+position: absolute;    left: 600px;;
   background: #b9aa96;
   background-image: -webkit-linear-gradient(top, #b9aa96, #b9aa96);
   background-image: -moz-linear-gradient(top, #b9aa96, #b9aa96);
@@ -185,6 +230,29 @@ position: absolute;    left: 640px;;
 }
 
 
+.Home-two{
+  padding-bottom: 30px;
+}
+.About-two{
+padding-bottom: 30px;
+}
+.Portfolio-two{padding-bottom: 30px;}
+.Contact-two{padding-bottom: 30px;}
+.Blog-two{padding-bottom: 30px;}
+.Learn{padding-bottom: 30px;}
+
+/******************LOGOS**********************/
+.whatsapp-logo{
+height:50px;
+width:50px ;
+padding-bottom:10px;
+}
+.instagram-logo{
+  height:70px;
+  width:70px;
+  padding-right: 100px;
+
+}
 
 
 .IMAGES{
