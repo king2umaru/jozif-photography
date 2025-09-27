@@ -1,92 +1,209 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <title>Jozif Photography</title>
 
-    <title>jozif Photography</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="favicon.ico">
-  </head>
-  <body>
+  <!-- Font Awesome 5 -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+  <!-- External CSS if you have -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Fullscreen hero with animated slideshow */
+    .hero {
+      height: 100vh; /* Full height of screen */
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      animation: slideShow 18s infinite ease-in-out;
+    }
+
+    /* Keyframes for background slideshow */
+    @keyframes slideShow {
+      0%   { background-image: url("photo-three.jpg"); }
+      33%  { background-image: url("photo-one.jpg"); }
+      66%  { background-image: url("profile-picture.jpg"); }
+      100% { background-image: url("top-image.jpg"); }
+    }
+
+    /* Make navbar transparent on top of image */
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.3); /* semi-transparent white */
+      backdrop-filter: blur(4px); /* optional frosted-glass effect */
+    }
+
+    /* Optional: center content inside hero */
+    .hero-content {
+      position: relative;
+      z-index: 5;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand text-dark" href="#">Jozif Photography</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active"><a class="nav-link text-dark" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="https://king2umaru.github.io/About/">About</a></li>
+
+      <!-- Portfolio with Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Portfolio
+        </a>
+        <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+          <a class="dropdown-item" href="https://king2umaru.github.io/WEDDING/">Wedding</a>
+          <a class="dropdown-item" href="#">Lifestyle</a>
+          <a class="dropdown-item" href="#">Portraits</a>
+          <a class="dropdown-item" href="#">Fashion</a>
+        </div>
+      </li>
+
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Contact</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Blog</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Learn</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Hero Section with Animated Background Images -->
+  <div class="hero d-flex justify-content-center align-items-center">
+    <div class="hero-content">
+      <h1 class="display-3">Welcome to Jozif Photography</h1>
+      <p class="lead">Capturing memories that last forever</p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
 
 
-    <div class="container-one">
+<div class="title">
 
+<h1>Hi, I am Joseph.</h1>
+<p>With over a decade's worth of professional creative work, I have excelled at my core values which are finding simple solutions to problems and delivering happiness especially through my images.</p>
 
-   <div class="heading-one"><h1 class="Home"> <a href="https://king2umaru.github.io/jozif-photography/"> Home</h1></a></div>
-<div class="heading-two"><h1 class="About">About</h1></div>
-<div class="heading-three"> <h1 class="portfolio"><a href="https://king2umaru.github.io/jozif-photography-portfolio/">Portfolio</h1></a></div>
-<div class="heading-four"><h1 class="jozif">Jozif Photography</h1></div>
-<div class="heading-five"><h1 class="Contact">Contact</h1></div>
-<div class="heading-six"><h1 class="Blog">Blog</h1></div>
-<div class="heading-seven"><h1 class="Learn">Learn</h1></div>
-
-
-<img class="profile-picture" src="profile-picture.jpg" alt="profile-picture">
+  <p>I'm visual artist, Tech Enthusiast, sports buff and Creative Director of Zen Backdrops, Zen Studios and Emmanuel Oyeleke Photography.</p>
 </div>
 
 
+<!-- section two -->
 
 
-<div class="container-two">
-<div class="TEXT">
-  <h1 class="JOZIF-TWO"> Hi, I am Joseph.</h1>
-  <p>With over a decade's worth of professional creative work, I have excelled at my core values which are finding simple solutions to problems and delivering happiness especially through my images.</p>
+<div class="row">
+  <div class="col-sm-6 col-lg-6 px-3">
+    <img src ="photo-three.jpg" alt="Photo Three" class="img-fluid">
+
+<div class="commercial">
+  <h1 class="text-center">Commercial</h1>
+</div>
+
+  </div>
+  <div class="col-sm-6 col-lg-6 px-3 ">
+    <img src="photo-two.jpg" alt="Photo Two" class="img-fluid">
+
+    <div class="fashion">
+      <h1 class="text-center">Fashion</h1>
+    </div>
+  </div>
 
 
-  <p>I'm visual artist, Tech Enthusiast, sports buff and Creative Director of Zen Backdrops, jozif Studios and jozif Photography.</p>
 </div>
 </div>
+
+
+<div class="text-center">
+  <img src="portrait.jpg" alt="Photo Two" class="img-fluid">
+
+  <div class="text-center">
+    <h1 class="text-center">portrait</h1>
+  </div>
+
+                      <!-- section three -->
+<br>
+<br>
+<br>
+  <div class="text-center">
+  <button type="button" class="btn btn-outline-secondary btn-lg">See More Gallery</button>
+  </div>
+
+
+
 <hr>
+                         <!-- bottom menu  -->
 
-<h1 class="heading">See My Work</h1>
-<div class="
-IMAGES">
-<img class="photo-one" src="photo-one.jpg" alt="">
-<img class="photo-two" src="photo-two.jpg" alt="">
-<img class="photo-three" src="photo-three.jpg" alt="">
+<div class="container menu">
+  <div class="row">
+    <!-- Left column -->
+    <div class="col-6 text-center">
+      <a href="#">Home</a>
+      <a href="https://king2umaru.github.io/About/">About</a>
+
+   <!-- drop down for Portfolio -->
+<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+              <a class="dropdown-item" href="https://king2umaru.github.io/WEDDING/">Wedding</a>
+              <a class="dropdown-item" href="#">Lifestyle</a>
+              <a class="dropdown-item" href="#">Portraits</a>
+              <a class="dropdown-item" href="#">Fashion</a>
+            </div>
+          </li>
+
+    </div>
+    <!-- Right column -->
+    <div class="col-6 text-center">
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+      <a href="#">Learn</a>
+    </div>
+  </div>
 </div>
 
-<div class="container-three">
-<h1 class="Portrait">Portrait</h1>
-<h1 class="Fashion">Fashion</h1>
-<h1 class="Commercial"> Commercial</h1>
-</div>
-<br>
-<a href="https://api.whatsapp.com/send/?phone=2349160742755&text&type=phone_number&app_absent=0"><h1 class="btn">SEE MORE GALLARIES</h1></a>
-<br>
-
-
-
+<hr>
 <div class="container-four">
-  <ul>
-    <li><h1 class="Home-two"> <a href="https://king2umaru.github.io/jozif-photography/">Home</a></h1></li>
-    <li><h1 class="About-two">About</h1></li>
-    <li><h1 class="Portfolio-two"> <a href="https://king2umaru.github.io/jozif-photography-portfolio/">Portfolio</a> </h1></li>
 
-  </ul>
-</div>
-
-<div class="container-five">
-  <ul>
-    <li><h1 class="Contact-two">Contact</h1></li>
-    <li><h1 class="Blog-two">Blog</h1></li>
-    <li><h1 class="Learn-two">Learn</h1></li>
-  </ul>
-</div>
-
-<div class="container-six">
-  <a href="https://www.instagram.com/jozifphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <img class="instagram-logo" src="instagram-logo.jfif" alt="instagram-logo"></a>
-  <img class="whatsapp-logo" src="whatsapp-logo.png" alt="whatsapp-logo">
-  <br>
-  <h1>All content Copyright © 2025 jozif Photography</h1>
 </div>
 
 
 
 
-  </body>
+                      <!-- socials -->
+<div class="">
+  <a href="https://www.instagram.com/jozifphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <i class="fab fa-instagram fa-3x mx-2"></i></a>
+      <a href="https://x.com/JozifGodfrey?t=3HnKvgNj-sXBQDawFyeJcQ&s=09"> <i class="fab fa-twitter fa-3x mx-2"></i></a>
+
+
+
+</div>
+
+</body>
 </html>
