@@ -1,5 +1,36 @@
 
 
+    /* Navbar overlay on hero */
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(4px);
+    }
+
+    /* Make navbar bigger on mobile */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 1rem; /* more space inside navbar */
+      }
+
+      .navbar-brand {
+        font-size: 1.8rem;   /* bigger brand text */
+        font-weight: 700;
+      }
+
+      .navbar-toggler {
+        font-size: 2rem;     /* larger burger icon */
+        padding: 12px 16px;
+      }
+
+      .navbar-nav .nav-link {
+        font-size: 1.4rem;   /* larger link text */
+        padding: 14px;
+      }
 
 
 .hero {
