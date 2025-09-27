@@ -2,120 +2,208 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>WEDDING</title>
+  <title>Jozif Photography</title>
 
   <!-- Font Awesome 5 -->
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
 
+  <!-- External CSS if you have -->
+  <link rel="stylesheet" href="css/style.css">
+
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      background: #fafafa;
+    /* Fullscreen hero with animated slideshow */
+    .hero {
+      height: 100vh; /* Full height of screen */
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      animation: slideShow 18s infinite ease-in-out;
     }
-    .insta-img {
+
+    /* Keyframes for background slideshow */
+    @keyframes slideShow {
+      0%   { background-image: url("photo-three.jpg"); }
+      33%  { background-image: url("photo-one.jpg"); }
+      66%  { background-image: url("profile-picture.jpg"); }
+      100% { background-image: url("top-image.jpg"); }
+    }
+
+    /* Make navbar transparent on top of image */
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 300px;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.3); /* semi-transparent white */
+      backdrop-filter: blur(4px); /* optional frosted-glass effect */
     }
-    .insta-img:hover {
-      transform: scale(1.05);
+
+    /* Optional: center content inside hero */
+    .hero-content {
+      position: relative;
+      z-index: 5;
+      color: white;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand text-white" href="#">Jozif Photography</a>
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand text-dark" href="#">Jozif Photography</a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item active"><a class="nav-link text-white" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="https://king2umaru.github.io/About/">About</a></li>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active"><a class="nav-link text-dark" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="https://king2umaru.github.io/About/">About</a></li>
 
-        <!-- Portfolio with Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Portfolio
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Wedding</a>
-            <a class="dropdown-item" href="#">Lifestyle</a>
-            <a class="dropdown-item" href="#">Portraits</a>
-            <a class="dropdown-item" href="#">Fashion</a>
-          </div>
-        </li>
-
-        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Gallery Section -->
-  <div class="container mt-5">
-    <h2 class="text-center mb-4">WEDDINGS</h2>
-    <div class="row">
-
-      <!-- Wedding One -->
-      <div class="col-md-4 col-sm-6">
-        <a href="https://king2umaru.github.io/wedding-one/" target="_blank">
-          <img src="wedding-one.jpg" class="insta-img" alt="Wedding One">
+      <!-- Portfolio with Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Portfolio
         </a>
-      </div>
+        <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+          <a class="dropdown-item" href="https://king2umaru.github.io/WEDDING/">Wedding</a>
+          <a class="dropdown-item" href="#">Lifestyle</a>
+          <a class="dropdown-item" href="#">Portraits</a>
+          <a class="dropdown-item" href="#">Fashion</a>
+        </div>
+      </li>
 
-      <!-- Wedding Two -->
-      <div class="col-md-4 col-sm-6">
-        <a href="wedding/wedding two.jpg" target="_blank">
-          <img src="wedding-two.jpg" class="insta-img" alt="Wedding Two">
-        </a>
-      </div>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Contact</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Blog</a></li>
+      <li class="nav-item"><a class="nav-link text-dark" href="#">Learn</a></li>
+    </ul>
+  </div>
+</nav>
 
-      <!-- Wedding Three -->
-      <div class="col-md-4 col-sm-6">
-        <a href="wedding/wedding three.jpg" target="_blank">
-          <img src="wedding-three.jpg" class="insta-img" alt="Wedding Three">
-        </a>
-      </div>
-
-      <!-- Wedding Four -->
-      <div class="col-md-4 col-sm-6">
-        <a href="wedding/wedding four.jpg" target="_blank">
-          <img src="wedding-four.jpg" class="insta-img" alt="Wedding Four">
-        </a>
-      </div>
-
-      <!-- Wedding Five -->
-      <div class="col-md-4 col-sm-6">
-        <a href="wedding/wedding five.jpg" target="_blank">
-          <img src="wedding-five.jpg" class="insta-img" alt="Wedding Five">
-        </a>
-      </div>
-
-      <!-- Wedding Six -->
-      <div class="col-md-4 col-sm-6">
-        <a href="wedding/wedding six.jpg" target="_blank">
-          <img src="wedding-six.jpg" class="insta-img" alt="Wedding Six">
-        </a>
-      </div>
-
+  <!-- Hero Section with Animated Background Images -->
+  <div class="hero d-flex justify-content-center align-items-center">
+    <div class="hero-content">
+      <h1 class="display-3">Welcome to Jozif Photography</h1>
+      <p class="lead">Capturing memories that last forever</p>
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+
+
+<div class="title">
+
+<h1>Hi, I am Joseph.</h1>
+<p>With over a decade's worth of professional creative work, I have excelled at my core values which are finding simple solutions to problems and delivering happiness especially through my images.</p>
+
+  <p>I'm visual artist, Tech Enthusiast, sports buff and Creative Director of Zen Backdrops, Zen Studios and Emmanuel Oyeleke Photography.</p>
+</div>
+
+
+<!-- section two -->
+
+
+<div class="row">
+  <div class="col-sm-6 col-lg-6 px-3">
+    <img src ="photo-three.jpg" alt="Photo Three" class="img-fluid">
+
+<div class="commercial">
+  <h1 class="text-center">Commercial</h1>
+</div>
+
+  </div>
+  <div class="col-sm-6 col-lg-6 px-3 ">
+    <img src="photo-two.jpg" alt="Photo Two" class="img-fluid">
+
+    <div class="fashion">
+      <h1 class="text-center">Fashion</h1>
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+
+<div class="text-center">
+  <img src="portrait.jpg" alt="Photo Two" class="img-fluid">
+
+  <div class="text-center">
+    <h1 class="text-center">portrait</h1>
+  </div>
+
+                      <!-- section three -->
+<br>
+<br>
+<br>
+  <div class="text-center">
+  <button type="button" class="btn btn-outline-secondary btn-lg">See More Gallery</button>
+  </div>
+
+
+
+<hr>
+                         <!-- bottom menu  -->
+
+<div class="container menu">
+  <div class="row">
+    <!-- Left column -->
+    <div class="col-6 text-center">
+      <a href="#">Home</a>
+      <a href="https://king2umaru.github.io/About/">About</a>
+
+   <!-- drop down for Portfolio -->
+<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+              <a class="dropdown-item" href="https://king2umaru.github.io/WEDDING/">Wedding</a>
+              <a class="dropdown-item" href="#">Lifestyle</a>
+              <a class="dropdown-item" href="#">Portraits</a>
+              <a class="dropdown-item" href="#">Fashion</a>
+            </div>
+          </li>
+
+    </div>
+    <!-- Right column -->
+    <div class="col-6 text-center">
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+      <a href="#">Learn</a>
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="container-four">
+
+</div>
+
+
+
+
+                      <!-- socials -->
+<div class="">
+  <a href="https://www.instagram.com/jozifphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <i class="fab fa-instagram fa-3x mx-2"></i></a>
+      <a href="https://x.com/JozifGodfrey?t=3HnKvgNj-sXBQDawFyeJcQ&s=09"> <i class="fab fa-twitter fa-3x mx-2"></i></a>
+
+
+
+</div>
 
 </body>
 </html>
