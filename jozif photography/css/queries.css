@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .section-two {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
