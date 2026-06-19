@@ -1,0 +1,8 @@
+@media (max-width: 600px) {
+  /*this is meant for gallary grid*/
+  .gallery-grid {
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+}
